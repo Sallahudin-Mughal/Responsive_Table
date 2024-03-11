@@ -1,0 +1,76 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #a8deff;
+}
+.comp-table{
+    width: 90vw;
+    background-color: #f2f4f4;
+    border-radius: 10px;
+    box-shadow: 0.4rem  rgba(0 , 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: .8rem;
+    overflow: auto;
+    padding: 15px 0;
+
+}
+.comp-table ::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 10px;
+}
+.comp-table ::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #0004;
+    visibility: visible;
+}
+.heading{
+    text-align: center;
+}
+table {
+    width: 95%;
+    min-width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+  }
+  tr{
+    height: 70px;
+    border-radius: 10px;
+  }
+  tr:hover{
+    background-color: rgba(0 , 0, 0, 0.1);
+  }
+  th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  th {
+    background-color: #54afff;
+  }
+  .btn{
+    background-color: transparent;
+    width: 75px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    color: blue;
+    font-size: 10px;
+    cursor: pointer;
+    margin: 3px 0px;
+  }
+  .btn:hover{
+    border: 1px solid #fff;
+    color: white;
+    background-color: blue;
+  }
+
+  @media only screen and (max-width: 500px){
+
+    
+  }
