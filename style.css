@@ -3,12 +3,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #a8deff;
+    background-color:#fff	;
 }
-.comp-table{
-    width: 90vw;
+
+/* ...............table style............ */
+.table-wrapper{
+  width: 90vw;
     background-color: #f2f4f4;
-    border-radius: 10px;
     box-shadow: 0.4rem  rgba(0 , 0, 0, 0.3);
     align-items: center;
     justify-content: center;
@@ -16,61 +17,105 @@ body{
     border-radius: .8rem;
     overflow: auto;
     padding: 15px 0;
-
-}
+    border: none;
+    
+  }
+  /* ...............table style............ */
 .comp-table ::-webkit-scrollbar{
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 10px;
 }
-.comp-table ::-webkit-scrollbar-thumb{
-    border-radius: 10px;
+::-webkit-scrollbar-thumb{
+    border-radius: 10rem;
     background-color: #0004;
     visibility: visible;
 }
 .heading{
     text-align: center;
+    width: 80vw;
+    margin: auto;
 }
+h1{
+  color: #5D3FD3;
+}
+.btn-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 10vh;
+  box-sizing: border-box;padding: 1vh 2vw;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5D3FD3	;
+  width: 10vw;
+  height: 7vh;
+  border-radius: 10rem;
+  color: white;
+  font-size: 0.9vw;
+  cursor: pointer;
+  margin:  0.5vw;
+  border-color: transparent;
+  box-shadow: 10vw rgba(255 , 255, 255, 0.7);
+}
+.btn i,p {
+  margin: 0 0.01vw;
+}
+
+.btn:hover{
+  font-weight: 700;
+}
+#checkbox:checked{
+  accent-color: #5D3FD3;
+}
+
 table {
     width: 95%;
     min-width: 90%;
-    margin: 10px auto;
+    margin: 2vh 2vw;
     border-collapse: collapse;
+    border: none;
   }
-  tr{
-    height: 70px;
+tr{
+    height: 6vh;
     border-radius: 10px;
+    border-bottom: 1px solid #ddd;
   }
-  tr:hover{
+tr:hover{
     background-color: rgba(0 , 0, 0, 0.1);
   }
-  th, td {
+th{
+    width: 16vw;
+    margin: 0 1rem;
+    text-wrap: nowrap;
+    background-color: #5D3FD3	;
+    color: #fff;
+  }
+td i{
+    font-size: 1.2rem;
+    color: blue;
+  }
+th, td {
     border: 1px solid #ddd;
     text-align: center;
-    padding: 5px;
-  }
-  
-  th {
-    background-color: #54afff;
-  }
-  .btn{
-    background-color: transparent;
-    width: 75px;
-    height: 20px;
-    border-radius: 5px;
-    border: 1px solid blue;
-    color: blue;
-    font-size: 10px;
-    cursor: pointer;
-    margin: 3px 0px;
-  }
-  .btn:hover{
-    border: 1px solid #fff;
-    color: white;
-    background-color: blue;
+    padding: 0.6vh 2vw;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
   }
 
-  @media only screen and (max-width: 500px){
-
-    
-  }
+thead th{
+  border: 1px solid white;
+  font-size: larger;
+}
+.btnn{
+  border: none;
+  background-color: inherit;
+  margin: auto;
+}
